@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem de Pessoas</title>
+</head>
+<body>
+    <h1>Lista de Pessoas</h1>
+    <a href="{% url 'cadastrar_pessoa' %}">Cadastrar Nova Pessoa</a>
+    <ul>
+        {% for pessoa in pessoas %}
+            <li>{{ pessoa.nome }} - {{ pessoa.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
