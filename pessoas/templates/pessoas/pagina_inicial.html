@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema de Gerenciamento de Pessoas</h1>
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="{% url 'listar_pessoas' %}" style="font-size: 20px; color: #4CAF50; text-decoration: none;">
+            Ver Lista de Pessoas
+        </a>
+    </div>
+</body>
+</html>
